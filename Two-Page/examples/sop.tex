@@ -1,0 +1,105 @@
+\documentclass[letterpaper]{article}
+\usepackage[letterpaper,margin=1.0in]{geometry}
+\usepackage{fontspec, color, enumerate, sectsty}
+\usepackage[normalem]{ulem}
+
+%\newcommand{\univ}{UMassAmherst}
+%\newcommand{\univSpecifics}{
+%	UMassAmherst being one of the premier institutes pursuing research in this discipline is ideal for me. It would be a great opportunity for me to work with Professor Sholoma Zilberstein. I am deeply inspired by his work on designing autonomous agents. I would also like to work with Professor Akshay Krishnamurthy on interactive learning.  At \univ, the diversity offered by the various research groups would provide me ample opportunities to explore the different ways in which each of these fields can contribute to the research going on in the other fields.
+%}
+%\newcommand{\univ}{UCLA}
+%\newcommand{\univSpecifics}{
+%	UCLA being one of the premier institutes pursuing research in this discipline is ideal for me. It would be a great opportunity for me to work with Professor Song-Chun Zhu. I am deeply inspired by her work on recommendation via Information Networks. I would also like to work with Professor Adnan Darwiche on probabilistic reasoning and its application in machine learning.  At UCLA, the diversity offered by the various research groups would provide me ample opportunities to explore the different ways in which each of these fields can contribute to the research going on in the other fields.
+%}
+%\newcommand{\univ}{Stanford University}
+%\newcommand{\univShort}{Stanford}
+%\newcommand{\univSpecifics}{
+%	Stanford being one of the premier institute pursuing research in this discipline is ideal for me. When I was searching for a course project during the course ``Bayesian Machine Learning'', I came across the paper ``A-NICE-MC: Adversarial Training for MCMC'' by Stefano Ermon et. al. I was intrigued by his novel method to automatically design efficient Markov chain kernels tailored for a specific domain. I also liked the work of Professor Jure Leskovec on mining and modeling large social and information network. I would be delighted to work with any of them. At \univShort, the diversity offered by the various research groups would provide me ample opportunities to explore the different ways in which each of these fields can contribute to the research going on in the other fields.
+%}
+
+%\newcommand{\univ}{University of Toronto}
+%\newcommand{\univShort}{\univ}
+%\newcommand{\univSpecifics}{
+%	University of Toronto being one of the premier institute pursuing research in this discipline is ideal for me. When I was searching for a course project during the course ``Bayesian Machine Learning'', I came across the paper ``Sequential Monte Carlo as Approximate Sampling: bounds, adaptive resampling via $\infty$-ESS, and an application to Particle Gibbs'' by Daniel M. Roy et. al. I was intrigued by his novel method of conditional adaptive resampling particle filter which controls the divergence from the target distribution. I also liked the work of Professor Richard Zemel on generative models of text and images. I would be delighted to work with any of them. At \univShort, the diversity offered by the various research groups would provide me ample opportunities to explore the different ways in which each of these fields can contribute to the research going on in the other fields.
+%}
+
+%\newcommand{\univ}{University of Southern California}
+%\newcommand{\univShort}{\univ}
+%\newcommand{\univSpecifics}{
+%	 University of Southern California being one of the premier institute pursuing research in this discipline is ideal for me. When I was exploring prior work in recommender systems during my Adobe internship, I came across the paper ``Personalized Entity Recommendation: A Heterogeneous Information Network Approach'' by Xiao Ren et. al. I was intrigued by their proposal of latent representations for users and items by propagating user preferences along different meta paths. I also liked the work of Professor Sven Koenig on dealing with uncertainty and incomplete information. I would be delighted to work with any of them. At \univShort, the diversity offered by the various research groups would provide me ample opportunities to explore the different ways in which each of these fields can contribute to the research going on in the other fields.
+%}
+
+%\newcommand{\univ}{Carnegie Mellon University}
+%\newcommand{\univShort}{CMU}
+%\newcommand{\univSpecifics}{
+%	CMU being one of the premier institute pursuing research in this discipline is ideal for me. When I was exploring prior work in recommender systems during my Adobe internship, I came across the paper ``Personalized Recommendations using Knowledge Graphs'' by William Cohen et. al. I was intrigued by their method of KG based recommendations using a general purpose probabilistic logic system called ProPPR. I also like the conjugate gradient based alternating minimization scheme presented in the paper ``Collaborative Filtering with Graph Information: Consistency and Scalable Methods'' by Professor Pradeep Ravikumar et. al. I would be delighted to work with any of them. At \univShort, the diversity offered by the various research groups would provide me ample opportunities to explore the different ways in which each of these fields can contribute to the research going on in the other fields.
+%}
+
+%\newcommand{\univ}{University of Illinois at Urbana-Champaign}
+%\newcommand{\univShort}{UIUC}
+%\newcommand{\univSpecifics}{
+%	UIUC being one of the premier institute pursuing research in this discipline is ideal for me. When I was exploring prior work in recommender systems during my Adobe internship, I came across the paper ``Leveraging User Reviews to Improve Accuracy for
+%	Mobile App Retrieval'' by ChengXiang Zhai et. al. I was intrigued by their idea of jointly modeling app descriptions and user reviews using topic model in order to generate app representations. I also like the approximate algorithm for computing fully personalized PPV presented in ``Scheduled Approximation and Incremental Enhancement for Accuracy-aware Personalized PageRank'' by Professor Kevin C. Chang et. al. I would be delighted to work with any of them. At \univShort, the diversity offered by the various research groups would provide me ample opportunities to explore the different ways in which each of these fields can contribute to the research going on in the other fields.
+%}
+
+%\newcommand{\univ}{University of Texas at Austin}
+%\newcommand{\univShort}{UT Austin}
+%\newcommand{\univSpecifics}{
+%	UT Austin being one of the premier institute pursuing research in this discipline is ideal for me. When I was exploring prior work in recommender systems during my Adobe internship, I came across the paper ``Tumblr Blog Recommendation with
+%	Boosted Inductive Matrix Completion'' by Inderjit S. Dhillon et. al. I was intrigued by their idea of boosted inductive matrix completion method for blog recommendation. I also like the approach based on unification of Multi Task Learning and Active Learning presented in ``Active Multitask Learning Using Both Latent and Supervised Shared Topics'' by Professor Raymond J. Mooney et. al. I would be delighted to work with any of them. At \univShort, the diversity offered by the various research groups would provide me ample opportunities to explore the different ways in which each of these fields can contribute to the research going on in the other fields.
+%}
+
+\newcommand{\univ}{Georgia Institute of Technology}
+\newcommand{\univShort}{Georgia Tech}
+\newcommand{\univSpecifics}{
+	Georgia Tech being one of the premier institute pursuing research in this discipline is ideal for me. When I was exploring prior work in recommender systems during my Adobe internship, I came across the paper ``Time-Sensitive Recommendation From
+	Recurrent User Activities'' by Le Song et. al. I was intrigued by their novel framework which connects self-exciting point processes and low-rank models to capture the recurrent temporal patterns in user-item consumption pairs. I also like the work ``Weakly supervised nonnegative matrix factorization for user-driven clustering'' by Professor Haesun Park et. al. I would be delighted to work with any of them. At \univShort, the diversity offered by the various research groups would provide me ample opportunities to explore the different ways in which each of these fields can contribute to the research going on in the other fields.
+}
+
+\newcommand{\soptitle}{Statement of Purpose}
+\newcommand{\yourname}{Shubham Agrawal}
+\newcommand{\youremail}{agshubh191@gmail.com}
+
+%% FONTS SETUP
+\defaultfontfeatures{Mapping=tex-text}
+
+
+\newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&~{}}}
+\usepackage[bookmarks, colorlinks, breaklinks,
+pdftitle={\yourname - \soptitle},pdfauthor={\yourname}, unicode]{hyperref}
+\hypersetup{linkcolor=magneta,citecolor=magenta,filecolor=magenta,urlcolor=[named]{WildStrawberry}}
+
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
+\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+\newcommand{\apostrophe}{\XeTeXglyph\XeTeXcharglyph"0027\relax} 
+
+\begin{document}
+\begin{center}
+	{ \LARGE \scshape \textbf{\soptitle}\\ }	
+	{ \Large \yourname\\}
+	% {DOB: 1$^{st}$ September, 1995 \\}
+	{ Applying for the M.S. program in Computer Science at \univ}
+\end{center}
+
+\hrule
+\vspace{1pt}
+\hrule
+\bigskip
+I still remember the moment of euphoria when my manager from the internship at Pariksha.co (a startup for digitizing education) called me. He congratulated me that the adaptive recommender system I implemented was helping more than 50 thousand students learn better. This experience has led to me to the truth that Computer Science can be a valuable tool for social upliftment. The critical thinking, experimentation, and impact that machine learning algorithms can provide motivate me. I aim to pursue a career in research because of the intellectual challenges accompanied by ample opportunities for innovation offered by it. I am therefore highly motivated for graduate studies in Computer Science, more specifically, \textbf{Machine Learning} and \textbf{Recommender Systems}. With this aim, I am applying for M.S. program in Computer Science at \univ. \\
+
+Being with a creative mindset and good with science and mathematics, engineering was a natural choice for me. I joined the Computer Science and Engineering department at Indian Institute of Technology, Kanpur (IIT Kanpur) after being ranked 191 among 1.5 million students in IIT JEE Advanced 2013. During my initial years of undergraduate studies (Oct. 2013 - Jan. 2015), my curiosity to explore prompted me to be a part of IITK Motorsports team which consisted of 17 students. The team designed and manufactured an All Terrain Vehicle for competing in country level design and race competition called BAJA Student India. As the member of chassis subsystem, I researched and analyzed various materials and design possibilities using advanced software like ANSYS and Solidworks. The constant cycles of researching, failing and then again researching required a lot of perseverance but the results were equally rewarding. We won the trophy of “\textbf{Best Incoming team}” and secured the \textbf{fourth position in the design event} among 44 teams countrywide. \\
+
+My journey in the field of machine learning began during my second-year internship (summer 2015) at Pariksha.co. I was given a task to design an \textbf{adaptive recommender system} to recommend questions to students. The problem was challenging as the question rating and user rating were interdependent entities. Moreover, I had to also deal with the cold start problem. As I was new in the field, I had to read a lot to strengthen my understanding. We used a modified version of model-based collaborative filtering. Within two months, the system was designed as a microservice using Go Language and MongoDB keeping scalability in mind. \\
+
+The success of adaptive recommender system motivated me to take an undergraduate project on \textbf{Multiple Kernel Learning} with \textbf{Professor Harish Karnick} during the sixth semester (Jan-April 2016). Aim of the project was to explore various combinations (linear/quadratic) of kernels to be used in Support Vector Machine in order to achieve results as good as Convolutional Neural Networks for object classification task. Understanding Multiple Kernel Learning required me to learn deep theoretical concepts like Relative Kernel Hilbert Space and Riesz Representation theorem. Apart from the theoretical gains, the whole process equipped me with the skills to implement and work with CNN and GPUs.\\
+
+In the summer of 2016, I was a research intern at \textbf{Adobe Research Labs, India}. The team consisting of two mentors and three interns created an automated approach which designs smart geo-fences based on location dependent product affinity of users. Since the problem was novel and not very well formulated, I have explored existing literature from various areas including location-based user similarities and e-commerce recommendations based on user behavior on websites. While exploring literature, I was amazed to see the huge productive potential that lay in the intelligent exploitation of the available data. To make e-commerce data usable in our case, I wrote a web crawler to link product IDs present in the dataset to the product hierarchy. The extreme sparsity of data was tackled by incorporating intrinsic interest of users towards products, the similarity between users and semantic similarity between locations. It was very satisfying to see the system producing geo-fences for user segments at locations we never thought of like the residential areas. Adobe \textbf{patented} the whole research and the project was also selected for showcasing in Adobe Tech Summit 2017, San Jose. Our work titled \textbf{Smart Geo-fencing with Location Sensitive Product Affinity} has been published as a conference paper in the conference \textbf{ACM SIGSPATIAL 2017}. Apart from the technical skills that I gained from the above experience, I also learned the way to go about addressing a research problem. From exploring scientific literature to formulating the problem statement and further on developing, implementing and testing the required heuristics, I now know that none of these can be undermined in importance.\\
+
+Motivated by the internship experience, I decided to explore the field more rigorously. Following year ( Jul. 2016 - Apr. 17), I took four machine learning courses. As the course project of “Recent advances in Computer Vision” taken by Professor Gaurav Sharma, we analyzed the work “DenseCap” by Andrej Karpathy et. al. by experimenting with the parameters and design choices of Fully Convolutional Localization Network on Visual Genome dataset. Initially, we were facing difficulty in reproducing the results due to limited 2GB GPU. To make it work, I trimmed down the fully connected layer of object detection module which contains most (around 90\%) of the parameters of the entire architecture. We observed that the authors were using Greedy Non Maximum Suppression(NMS) for removing overlapping bounding boxes of predicted objects. We replaced the original NMS module with our implementation of trainable spatial suppression layer called ``tyrolean network'' and retrained the entire model. The enhanced model \textbf{surpassed the MAP reported by the authors}. In another course project of the course ``Optimization Techniques'' taken by Professor Purushottam Kar, motivated by the ubiquitous need of deploying the machine learning models on limited resources environment like mobile phones,  we implemented a module for decomposing the input weight matrix of a trained model into a low-rank matrix and a sparse matrix. All these courses strengthened my foundations in machine learning and project work allowed me to implement my learnings on real-world datasets. Moreover, I became a much better programmer as I had to learn new programming languages, libraries, tools, and technologies on-demand to meet project requirements.\\
+
+Due to the financial issues, I decided to go for a job before graduate studies. Since July 2017, I am employed as \textbf{Member of Technical Staff} with \textbf{Adobe Systems India Pvt. Ltd}. I work on developing new features for Adobe Acrobat using \CC. I am also learning the level of technicalities involved with maintaining and deploying humongous amount of code. During a week-long hackathon, I developed POC of a unified annotation tool for all annotation types which was highly appreciated by the management and got selected for shipping with the March release of Adobe Acrobat. I am also a part of GRP-ACROML, a hobby group for discussing and implementing possible ML applications inside Adobe Acrobat. As a part of the group, I am working on a problem of recommending a relevant tool to the user based on pdf content type. Working with the Adobe made me realize the immense potential of machine learning algorithms in industry. It made me realize about the AI revolution the world is going to encounter in upcoming decades and how much I want to be a part of it.\\
+
+My aim to pursue master’s degree is an essential step towards a research career, be it through a Ph.D. or a research-oriented job.\univSpecifics \\
+	
+What started as a mere curiosity to explore things, has now developed into something I am passionate and confident about. Each project has provided me with something new to learn and to gain from, helping me develop as a researcher. I expect that my research aptitude, persistence, and enthusiasm towards solving challenging problems would add value to the already established research culture of the institute. Given my research experience, strong academic background, and experience of tutoring students as a part of the Counselling Service, I believe that I would be successful as a graduate student.
+\end{document}

@@ -2,4 +2,8 @@
 *.aux
 *.gz
 *.out
+*.pdf
 Two-Page/examples/submitted_cvs
+Two-Page/examples/coverletter.tex
+
+!Two-Page/examples/submitted_research_cvs/*.pdf

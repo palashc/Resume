@@ -1,178 +1,92 @@
-\cvsection{Projects}
-\begin{cventries}
-	%---------------------------------------------------------
-	\cventry
-	{Course Project under Dr. Gaurav Sharma} % Job title
-	{Densecap with NMS Convenet} % Organization
-	{Aug. - Nov. 2016} % Location
-	{
-		\textbf{\href{https://www.dropbox.com/s/5jidhqmthy9ks06/cs698-final-report-extended.pdf?dl=0}{report \ExternalLink}},
-		\textbf{\href{https://www.dropbox.com/s/byn2z4o4yiwf00b/CS698\%20Final\%20PPT.pdf?dl=0}{pres \ExternalLink}}
-	} % Date(s)
-	{
-		\begin{cvitems} % Description(s) of tasks/responsibilities
-			%\item {Aim was to choose an SOA paper, implement/reproduce approximate results and finally go beyond that work.} 
-			\item {Reproduced the results of paper \textit{DenseCap: Fully Convolutional Localization Networks for Dense Captioning}  on smaller 2 GB GPU which required a lot of optimizations (Originally, 12 GB Titan X GPU was used)}
-			\item Used the Tryolean network - \textit{ A convolutional network for NMS"}, to discard test-time NMS in favor of a trainable spatial suppression layer
-			\item {Enhanced the mAP of densecap from 5.698 to 5.76.}
-		\end{cvitems}
-	}
-	
-	%---------------------------------------------------------
-	\cventry
-	{Undergraduate project under Dr. Harish Karnick} % Job title
-	{Multiple Kernel Learning} % Organization
-	{Jan. - Apr. 2015} % Location
-	{\href{https://www.dropbox.com/s/dg987vl0zdfh6kj/cs396-graduate-project.pdf?dl=0}{\textbf{report \ExternalLink}}} % Date(s)
-	{
-		\begin{cvitems} % Description(s) of tasks/responsibilities
-			 \item {Explored relative kernel hilbert space, multiple kernel learning algorithm and hierarchical kernel learning.}
-			 \item {Extracted surf and convolutional deep-net (pre-trained BVLC GoogleNet model) features for Caltech multiclass object classification dataset}
-			 \item {Implemented Simple MKL algorithm and studied effects of linear combination of distinct kernels on svm classifier}
-%			 \item {
-%			 	\href{https://www.dropbox.com/s/dg987vl0zdfh6kj/cs396-graduate-project.pdf?dl=0}{report \ExternalLink}
-%			 }
-		\end{cvitems}
-	}
-	
+\section{Key Projects}
 
+\cventry
+{Aug. 2016\\--Nov. 2016}
+{Densecap with NMS Convenet}
+{Course project under Dr. Gaurav Sharma}
+{}
+{}
+{
+	\begin{itemize}
+		\item {Analyzed the work ``DenseCap'' by Andrej Karpathy et. al. by experimenting with the parameters and design choices of Fully Convolutional Localization Network on Visual Genome dataset.}
+		\item To discard the original test-time non-maximum suppression, we used trainable spatial suppression layer from the work ``A convnet for non-maximum suppression'' by Jan Hosang et. al. This enhanced the \textbf{mAP} of densecap from \textbf{5.698 to 5.76}.\hfill( \href{https://www.dropbox.com/s/5jidhqmthy9ks06/cs698-final-report-extended.pdf?dl=0}{report \ExternalLink}, \href{https://www.dropbox.com/s/byn2z4o4yiwf00b/CS698\%20Final\%20PPT.pdf?dl=0}{pres \ExternalLink}
+		)
+	\end{itemize}
+}
+
+\cventry
+	{Jan. 2015\\--Apr. 2015}
+	{Multiple Kernel Learning}
+	{Undergraduate project under Dr. Harish Karnick}
+	{}{}
+	{
+		\begin{itemize}
+			 \item {Studied Relative Reproducing Kernel Hilbert space, Multiple Kernel Learning, and Hierarchical Kernel Learning.}
+			 %\item {}
+			 \item {Implemented \textbf{Simple MKL} to study the effects of the linear combination of distinct kernels on SVM classifier. Classification task was done on Caltech multiclass object classification dataset using SURF and convolutional deep-net features(pre-trained BVLC GoogleNet model). \hfill (\href{https://www.dropbox.com/s/dg987vl0zdfh6kj/cs396-graduate-project.pdf?dl=0}{report \ExternalLink})	}
+		\end{itemize}
+	}
 	
-	%---------------------------------------------------------
-	\cventry
-	{Course Project under Dr. Purushottam Kar} % Job title
-	{Low rank model for neural networks} % Organization
-	{Aug. - Nov. 2016} % Location
+\cventry
+	{Jan. 2017\\--May 2017}
+	{Poisson Matrix Factorization}
+	{Course project under Dr. Piyush Rai}
+	{}{}
+	%{} % Date(s)
 	{
-		\textbf{\href{https://www.dropbox.com/s/wb51nni96m6s1nr/Final\%20Project\%20Report.pdf?dl=0}{report \ExternalLink}}	
-	} % Date(s)
-	{
-		\begin{cvitems} % Description(s) of tasks/responsibilities
-			\item { 
-				Based on the paper - \textit{"Robust PCA problem via outlier pursuit"} which finds the low-dimensional subspace approximation to high dimesional points after eliminating corruptions.
-				}
-			\item { 
-				Implemented a module for decomposing the input weight matrix into a low rank and a sparse matrix. Code was written in matlab and python.
-			}
-			\item {
-				The resultant neural network performed with comparable accuracy and takes less time.
-			}
-		\end{cvitems}
+		\begin{itemize}
+			\item {Studied various models for Bayesian Recommender Systems including Poisson Matrix Factorization, Hierarchical Poisson Matrix Factorization, Bayesian Non-parametric Poisson Matrix Factorization}
+			\item {Implemented and compared the performance of the three models on MovieLens 1M dataset. }
+			\item {Also analyzed the effect of latent dimension on the models. Learnt the use of auxiliary variables in variational inference to make the models locally conjugate and facilitate inference \hfill (\href{https://www.dropbox.com/s/a5gn52k0ggf8m5w/poisson-matrix-factorization.pdf?dl=0}{report \ExternalLink})}
+		\end{itemize}
 	}
 
-	%---------------------------------------------------------
-	\cventry
+\cventry
+	{Aug. 2016\\--Nov. 2016}
+	{Automatic Abstract Generation for Research Papers}
+	{Course project under Dr. Harish Karnick}
+	%{\textbf{}} % Date(s)
+	{}{}
 	{
-		Course Project under Dr. Piyush Rai
-	} % Job title
-	{Poisson Matrix Factorization} % Organization
-	{Jan. - May 2017} % Location
-	{\textbf{\href{https://www.dropbox.com/s/a5gn52k0ggf8m5w/poisson-matrix-factorization.pdf?dl=0}{report \ExternalLink}}} % Date(s)
-	{
-		\begin{cvitems} % Description(s) of tasks/responsibilities
-			\item { Implemented and compared Scalable Hierarchical Poisson Factorization and Nonparametric Bayesian Matrix Factorization}
-			\item { Tried to expand the work by incorporating metadata and interactive sampling.}
-		\end{cvitems}
-	}
-	%---------------------------------------------------------
-	\cventry
-	{Course Project under Dr. Harish Karnick} % Job title
-	{Automatic Abstract Generation for Research Papers} % Organization
-	{Aug. - Nov. 2016} % Location
-	{\textbf{\href{https://www.dropbox.com/s/h5jqpm20l8bhan6/G4-FinalReport.pdf?dl=0}{report \ExternalLink}}} % Date(s)
-	{
-		\begin{cvitems} % Description(s) of tasks/responsibilities
+		\begin{itemize}
 			\item {
-				The important sentences are first extracted from the paper text and fed to an abstractive model which outputs the final summary for the paper
+				The important sentences are extracted from the paper and fed to an abstractive model which outputs the final summary of the paper. 	For extractive summarization, we experimented with word frequency based scores, text rank, and latent semantic analysis using ROGUE as an evaluation metric.
 			}
 			\item {
-				Word frequency based scores, text rank and latent semantic analysis were experimented for extraction. 
+				To generate the final abstract, we implemented RNN encoder-decoder network using Keras library. \hfill (\href{https://www.dropbox.com/s/h5jqpm20l8bhan6/G4-FinalReport.pdf?dl=0}{report \ExternalLink})
 			}
-			\item {
-				Implemented RNN encoder-decoder network to generate the final abstract. Model was evaluated using ROGUE metric.
+		\end{itemize}
+	}	
+
+\cventry
+	{Aug. 2016\\--Nov. 2016}
+	{Low-rank model for neural networks}
+	{Course project under Dr. Purushottam Kar}
+	%{\textbf{}	}
+	{}{}
+	{
+		\begin{itemize}
+			\item { 
+				Implemented a module for decomposing the input weight matrix into a low rank and a sparse matrix.
 			}
-		\end{cvitems}
+			\item { 
+				The module is based on the work - ``Robust PCA problem via outlier pursuit'' which finds the low-dimensional subspace approximation to high dimensional points after eliminating corruptions. \hfill (\href{https://www.dropbox.com/s/wb51nni96m6s1nr/Final\%20Project\%20Report.pdf?dl=0}{report \ExternalLink})
+			}
+		\end{itemize}
 	}
-	
-	%---------------------------------------------------------
-	\cventry
-	{Course Project under Dr. Harish Karnick} % Job title
-	{Object(Pedestrian/Two-Wheeler/Three-Wheeler) Detection in Survillience Videos} % Organization
-	{Jan. - Aug. 2016} % Location
-	{
-		\textbf{\href{https://github.com/submagr/MLT-Classifier}{code \ExternalLink}}, 
-		\textbf{\href{https://www.dropbox.com/s/sh69si90hl7mtxr/MLTProjectReport.pdf?dl=0}{report \ExternalLink}}	
-	} % Date(s)
-	{
-		\begin{cvitems} % Description(s) of tasks/responsibilities
-			\item {Identified and classified objects into pedestrians, two-wheelers, three-wheelers and four-wheeler in surveillance video}
-			\item {Performed background-foreground separation to identify moving objects. Used surf and convolutional deep-net features (BVLC GoogleNet)}
-			\item {Used decision tree, random forest and svm (ovr and ovo) classifiers to predict labels}
-		\end{cvitems}
-	}
-%	%---------------------------------------------------------
-%	
-%	
-%	\cventry
-%	{Course Project under Dr. Subhajit Roy} % Job title
-%	{Go-Python-x86 Compiler Design} % Organization
-%	{IIT Kanpur, India} % Location
-%	{Jan. - Apr. 2016} % Date(s)
+
+\cventry
+	{Jan.2016\\--Aug. 2016}
+	{Object(Pedestrian/Two-Wheeler/Three-Wheeler) Identification in Surveillance Videos}
+	{Course project under Dr. Harish Karnick}
 %	{
-%		\begin{cvitems} % Description(s) of tasks/responsibilities
-%			\item Implemented an end-to-end compiler for a subset of Go language and x86 architecture in python using PLY (python Lex-Yacc)
-%			\item Provided support for multi-dimensional arrays, nested and recursive procedures etc. Used back tracking algorithm and done short circuiting
-%		\end{cvitems}
+%		\textbf{}, 
+%		\textbf{}	
 %	}
-%	
-%	%---------------------------------------------------------
-%	\cventry
-%	{Course Project under Dr. Mainak Choudhari} % Job title
-%	{NachOS} % Organization
-%	{IIT Kanpur, India} % Location
-%	{Jan. - Apr. 2016} % Date(s)
-%	{
-%		\begin{cvitems} % Description(s) of tasks/responsibilities
-%			\item Extended the standard system call library of NachOS and implemented system calls pertaining to Fork, Exec, Join, Yield, Sleep and Exit
-%			\item Implemented process scheduling algorithms: UNIX Scheduling, FIFO, Round Robin, Shortest Job First and Non-pre-emptive job scheduling
-%			\item Programmed page replacement algorithms: Random Page Allocation, FIFO, LRU and LRU Clock to evaluate relative performances
-%		\end{cvitems}
-%	}
-%	%---------------------------------------------------------
-%	\cventry
-%	{Course Project under Dr. Sandeep Shukla} % Job title
-%	{Zoobar Secure} % Organization
-%	{IIT Kanpur, India} % Location
-%	{Jan. - Apr. 2016} % Date(s)
-%	{
-%		\begin{cvitems} % Description(s) of tasks/responsibilities
-%			\item Extended zoobar web application to learn about various security concepts including buffer overrun attacks, xss, csrf and sql injection
-%			\item Done privilege separation and server side sandboxing on OKWS web server. Created program analysis tools based on symbolic execution
-%		\end{cvitems}
-%	}
-	
-	%---------------------------------------------------------
-	\iffalse
-	\cventry
-	{Subtitle Downloader} % Job title
-	{Open Source Projects} % Organization
-	{IIT Kanpur, India} % Location
-	{Dec. 2013} % Date(s)
+	{}{}
 	{
-		\begin{cvitems} % Description(s) of tasks/responsibilities
-			\item Wrote a python script that scrapes and extract the subtitle from subscene.com.
-		\end{cvitems}
+		\begin{itemize}
+			\item {Experimented with object proposal methods (Morphological, Selective Search) and feature extractors (SURF, ConvNets) for detection and classification.}
+			\item {Used decision tree, random forest and SVM (OVR and OVO) classifiers to predict labels \hfill (\href{https://github.com/submagr/MLT-Classifier}{code \ExternalLink}, \href{https://www.dropbox.com/s/sh69si90hl7mtxr/MLTProjectReport.pdf?dl=0}{report \ExternalLink})}
+		\end{itemize}
 	}
-	
-	\cventry
-	{IITK FB Forum App} % Job title
-	{} % Organization
-	{} % Location
-	{May 2014} % Date(s)
-	{
-		\begin{cvitems} % Description(s) of tasks/responsibilities
-			\item Created an online discussion website for students and connected it with Facebook to make it more user friendly
-			\item Used PHP and PostgreSQL for back-end and hosted application on Heroku. Used Facebook SDK for JavaScript for facebook login and Canvas frame for user interface
-		\end{cvitems}
-	}
-	\fi
-\end{cventries}

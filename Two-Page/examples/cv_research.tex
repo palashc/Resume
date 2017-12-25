@@ -1,51 +1,57 @@
-%!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
-% Awesome CV LaTeX Template for CV/Resume
+               %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
 %
 % This template has been downloaded from:
-% https://github.com/posquit0/Awesome-CV
+% http://www.LaTeXTemplates.com
 %
-% Author:
-% Claud D. Park <posquit0.bj@gmail.com>
-% http://www.posquit0.com
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
 %
-% Template license:
-% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
 
-%-------------------------------------------------------------------------------
-% CONFIGURATIONS
-%-------------------------------------------------------------------------------
-% A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
-% Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
-% Specify the location of the included fonts
-\fontdir[fonts/]
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
-% Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-emerald}
-% Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
+\usepackage[scale=0.90]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{1.9cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvheadnamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
-% Colors for text
-% Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
+\usepackage{xcolor}
 
-% Set false if you don't want to highlight section with awesome color
-\setbool{acvSectionColorHighlight}{false}
+\definecolor{mypink1}{RGB}{1, 76, 102}
+\newcommand{\mycolor}{mypink1}
 
-% If you would like to change the social information separator from a pipe (|) to something else
-\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+%----------------------------------------------------------------------------------------
+%   NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
 
+\firstname{Shubham} % Your first name
+\familyname{Agrawal} % Your last name
+% All information in this block is optional, comment out any lines you don't need
+\address{X-304, Amrapali Saphire, Sector-45}{Noida, Uttar Pradesh, India, 201301}
+\mobile{(+91) 7754916150}
+\email{agshubh191@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith}
+%\title{Applying for C.S. M.S. at Stanford University}
+%----------------------------------------------------------------------------------------
 \newcommand{\ExternalLink}{%
 	\tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
 		\begin{scope}[x=1ex, y=1ex]
@@ -66,62 +72,33 @@
 		-- (1, 1) -- (1, 0.6);
 	}
 }
+\usepackage[colorlinks = true,
+linkcolor = \mycolor,
+urlcolor  = \mycolor,
+citecolor = \mycolor,
+anchorcolor = \mycolor]{hyperref}
 
-%-------------------------------------------------------------------------------
-%	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
-%-------------------------------------------------------------------------------
-% Available options: circle|rectangle,edge/noedge,left/right
-% \photo{./examples/profile.png}
-\name{}{Shubham Agrawal}
-\position{Member of Technical Staff, Adobe{\enskip\cdotp\enskip} Computer Science Graduate IIT Kanpur}
-% \address{X-304, Amrapali Saphire, Sector 45, Noida, PIN: 201301}
-
-\mobile{(+91) 77-5491-6150}
-\email{agshubh191@gmail.com}
-% \homepage{submagr.github.io}
-\github{submagr}
-\linkedin{submagr}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-% \twitter{@twit}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \extrainfo{extra informations}
-
-%\quote{``Must be the change that you want to see in the world."}
-
-
-%-------------------------------------------------------------------------------
 \begin{document}
 
-% Print the header with above personal informations
-% Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader
+%\hypersetup{
+%	colorlinks=true,
+%	linkcolor=blue,
+%	urlcolor=blue,
+%	citecolor=blue,
+%	anchorcolor=blue
+%}
 
-% Print the footer with 3 arguments(<left>, <center>, <right>)
-% Leave any of these blank if they are not needed
-\makecvfooter
-  {\today}
-  {Shubham Agrawal~~~·~~~Curriculum Vitae}
-  {\thepage}
-
-
-%-------------------------------------------------------------------------------
-%	CV/RESUME CONTENT
-%	Each section is imported separately, open each file in turn to modify content
-%-------------------------------------------------------------------------------
-\input{cv_research/education.tex}
+	
+\makecvtitle % Print the CV title
+\vspace*{-10mm}
 \input{cv_research/research-interest.tex}
+\input{cv_research/education.tex}
 \input{cv_research/publications.tex}
 \input{cv_research/experience.tex}
 \input{cv_research/projects.tex}
 \input{cv_research/honors.tex}
 \input{cv_research/teaching.tex}
-% \input{cv_research/skills.tex}
 \input{cv_research/courses.tex}
 \input{cv_research/extracurricular.tex}
-
-
-%-------------------------------------------------------------------------------
 \end{document}
+              
